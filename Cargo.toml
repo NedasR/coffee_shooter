@@ -1,0 +1,12 @@
+[package]
+name = "raylib_game"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+imgui = "0.12.0"
+raylib = {version = "5.0.2" }
+raylib_imgui_rs = "0.2.0"
+
+[profile.dev.build-override]
+debug = true
