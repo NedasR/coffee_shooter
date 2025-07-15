@@ -65,6 +65,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b048fb63fd8b5923fc5aa7b340d8e156aec7ec02f0c78fa8a6ddc2613f6f71de"
 
 [[package]]
+name = "box2d-rs"
+version = "0.0.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5150004def1b5eb8db8c80fac41437dabda563ccc49f8a71dac4ffd132615ba5"
+dependencies = [
+ "bitflags 2.6.0",
+]
+
+[[package]]
 name = "cc"
 version = "1.2.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -407,6 +416,7 @@ dependencies = [
 name = "raylib_game"
 version = "0.1.0"
 dependencies = [
+ "box2d-rs",
  "imgui",
  "raylib",
  "raylib_imgui_rs",

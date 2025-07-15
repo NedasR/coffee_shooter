@@ -2,13 +2,17 @@
 mod bootstrap;
 mod player;
 mod systems;
+mod util;
+mod core;
 
 use raylib::prelude::*;
+
 
 fn main() 
 {
     
-    bootstrap::bootstrap_initialize();
+    let mut game = bootstrap::GameContext::new();
+    game.run();
 
 }
 
